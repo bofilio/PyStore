@@ -11,7 +11,7 @@ class Category(models.Model):
     title = models.CharField(max_length=200)
     brief = models.CharField(max_length=255, null=True)
     color = models.CharField(max_length=20, null=True)
-    icon = models.ImageField(null=True)
+    icon = models.FileField(null=True)
 
     def __str__(self):
         return self.title
@@ -65,6 +65,7 @@ class Product(models.Model):
     description = models.TextField()
     categories = models.ManyToManyField(to=Category, related_name="products")
     discount = models.FloatField(default=0)
+    visited=models.IntegerField(default=0)
 
     def __str__(self):
         return self.title
