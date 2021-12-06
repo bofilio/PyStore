@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['localhost', 'pystorebackend.herokuapp.com']
 INSTALLED_APPS = [
     'corsheaders',
     'whitenoise.runserver_nostatic',
+    'jet.dashboard',
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'backend',
     'django_seed',
+    'colorfield',
 
 ]
 
@@ -140,3 +143,7 @@ MEDIA_URL='/media/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#jet settings
+X_FRAME_OPTIONS = 'SAMEORIGIN'

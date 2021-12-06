@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('api/',include('backend.urls')),
-    path('admin/', admin.site.urls),
+    path('jet/', include('jet.urls', 'jet')),
+    path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
+    path('', admin.site.urls),
     path('api-auth/', include('rest_framework.urls'))
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
