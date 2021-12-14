@@ -25,7 +25,6 @@ class CategoryViewSets(viewsets.ModelViewSet):
 class AddressViewSets(viewsets.ModelViewSet):
     queryset =  Address.objects.all()
     serializer_class = AddressSerializer
-
 class NewsArticleViewSets(viewsets.ModelViewSet):
     queryset =  NewsArticle.objects.all()
     serializer_class = NewsArticleDetailsSerializer

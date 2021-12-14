@@ -1,3 +1,4 @@
+aniso8601==7.0.0
 asgiref==3.4.1
 dj-database-url==0.5.0
 Django==3.2.9
@@ -9,13 +10,20 @@ django-seed==0.3.1
 djangorestframework==3.12.4
 Faker==9.8.3
 feedparser==6.0.8
+graphene==2.1.9
+graphene-django==2.15.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
 gunicorn==20.1.0
 Markdown==3.3.4
 Pillow==8.4.0
+promise==2.3
 psycopg2==2.9.2
 python-dateutil==2.8.2
 pytz==2021.3
+Rx==1.6.1
 sgmllib3k==1.0.0
+singledispatch==3.7.0
 six==1.16.0
 sqlparse==0.4.2
 text-unidecode==1.3

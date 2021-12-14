@@ -39,14 +39,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',# Required for GraphiQL
     'rest_framework',
     'backend',
+    'users',
     'django_seed',
     'colorfield',
+    'graphene_django',
 
 ]
-
+############################################################GrapheQl settings
+GRAPHENE = {
+   "SCHEMA": "backend.api.schema"
+}
+###############################################################################
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
