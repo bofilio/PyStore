@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 ]
 ############################################################GrapheQl settings
 GRAPHENE = {
-   "SCHEMA": "backend.api.schema"
+   "SCHEMA": "EMS.schema.schema"
 }
 ###############################################################################
 MIDDLEWARE = [
